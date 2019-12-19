@@ -1,0 +1,58 @@
+{
+  "name": "web_application_for_managers_and_workers",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.4.3",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.31",
+    "@material-ui/styles": "^4.0.0-rc.0",
+    "@react-pdf/renderer": "^1.6.7",
+    "aws-sdk": "^2.438.0",
+    "axios": "^0.18.0",
+    "braintree": "^2.16.0",
+    "braintree-dropin-react": "^0.1.1",
+    "braintree-web-drop-in-react": "^1.0.7",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.1",
+    "firebase": "^5.9.4",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
+    "material-ui": "^0.20.2",
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.27",
+    "nodemailer": "^6.3.1",
+    "react": "^16.8.6",
+    "react-datepicker": "^2.4.0",
+    "react-dom": "^16.8.6",
+    "react-paypal-button-v2": "^2.3.1",
+    "react-paypal-express-checkout": "^1.0.5",
+    "react-pdf": "^4.1.0",
+    "react-scripts": "2.1.8",
+    "react-sound": "^1.2.0",
+    "translate": "^1.1.0"
+  },
+  "scripts": {
+    "start": "concurrently set HTTPS=true&&react-scripts start&&node server.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "node index.js",
+    "client": "npm start ",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "proxy": "http://localhost:3000",
+  "engines": {
+    "node": "10.x"
+  }
+}
